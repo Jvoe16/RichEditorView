@@ -9,6 +9,7 @@ let package = Package(
         .library(name: "RichEditorView", targets: ["RichEditorView"])
     ],
     targets: [
-        .target(name: "RichEditorView", path: "Sources")
+        .target(name: "RichEditorView", path: "Sources"),
+        .testTarget(name: "RichEditorViewTest", dependencies: ["RichEditorView"] , path: "Tests")
     ]
 )
